@@ -1,10 +1,7 @@
 import { useState, useRef } from "react";
 import image1 from "../assets/p1.png";
-import image2 from "../assets/p2.png";
-import image3 from "../assets/p3.png";
 import crown from "../assets/pricingcrown.png";
-import animation from "../assets/pricing.webm";
-import growth from "../assets/grow_animation.webm";
+
 
 
 const PricingTable = () => {
@@ -20,7 +17,7 @@ const PricingTable = () => {
       gradient: "from-blue-500 to-blue-700",
       items: [
         {
-          name: "Genius",
+          name: "ABC",
           color:
             "bg-gradient-to-r from-[#FA828C] to-[#4865F4] text-transparent bg-clip-text",
           description:
@@ -32,7 +29,7 @@ const PricingTable = () => {
           ],
         },
         {
-          name: "Rainbow",
+          name: "DEF",
           color:
             "bg-gradient-to-r from-[#0163F8] to-[#04EEF1] text-transparent bg-clip-text",
           description: "Complete color grading and palette management system",
@@ -43,7 +40,7 @@ const PricingTable = () => {
           ],
         },
         {
-          name: "Opus",
+          name: "GHI",
           color:
             "bg-gradient-to-r from-[#6CFF7A] to-[#04EEF1] text-transparent bg-clip-text",
           description: "Professional audio editing and music creation suite",
@@ -55,63 +52,7 @@ const PricingTable = () => {
         },
       ],
     },
-    {
-      suite: "",
-      imageUrl: image2, // Update with actual image path
-      pricing: { free: "$0.00", average: "$100", maximum: "$500" },
-      gradient: "",
-      items: [
-        {
-          name: "Wildcard",
-          color:
-            "bg-gradient-to-r from-[#0267F8] to-[#0AFF88] text-transparent bg-clip-text",
-          description: "Versatile media management and organization tool",
-          features: ["Asset organization", "Quick search", "Batch processing"],
-        },
-        {
-          name: "Thrive",
-          color:
-            "bg-gradient-to-r from-[#0267F8] to-[#DA0AFF] text-transparent bg-clip-text",
-          description: "Social media management and analytics platform",
-          features: [
-            "Post scheduling",
-            "Analytics dashboard",
-            "Engagement tracking",
-          ],
-        },
-        {
-          name: "Hawkeye",
-          color:
-            "bg-gradient-to-r from-[#E3FD1B] to-[#0163F8] text-transparent bg-clip-text",
-          description: "Advanced image recognition and tagging system",
-          features: ["Auto-tagging", "Visual search", "Image analytics"],
-        },
-      ],
-    },
-    {
-      suite: "",
-      imageUrl: image3, // Update with actual image path
-      pricing: { free: "$0.00", average: "$100", maximum: "$500" },
-      gradient: "from-pink-500 to-pink-700",
-      items: [
-        {
-          name: "Creative",
-          color: "text-[#015FF8]",
-          description: "Complete creative workflow solution",
-          features: [
-            "Project management",
-            "Resource library",
-            "Team collaboration",
-          ],
-        },
-        {
-          name: "Media",
-          color: "text-[#015FF8]",
-          description: "Comprehensive media management toolkit",
-          features: ["Media library", "Distribution tools", "Analytics"],
-        },
-      ],
-    },
+    
   ];
 
   const toggleItem = (suiteName, itemName) => {
@@ -179,34 +120,6 @@ const PricingTable = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#00000080] to-transparent rounded-lg"></div>
 
                 {/* Animations */}
-                {index === 0 && (
-                 <div className="absolute z-20 left-1/2 transform -translate-x-1/2 bottom-[-58px]">
-                 <video
-                   src={animation}
-                   autoPlay
-                   loop
-                   muted
-                   playsInline
-                      className="w-[96px] h-[96px] pointer-events-none"
-                      style={{ backgroundColor: 'transparent' }}
-                 ></video>
-               </div>
-                )}
-
-                {index === 2 && (
-                  <div className="absolute z-20 left-1/2 transform -translate-x-1/2 bottom-[-58px]">
-                  <video
-                    src={growth}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                      className="w-[96px] h-[96px] pointer-events-none"
-                      style={{ backgroundColor: 'transparent' }}
-                  ></video>
-                </div>
-                )}
-
                 <h2 className="relative text-2xl font-bold text-white z-10 text-center">
                   {suite.suite}
                 </h2>
