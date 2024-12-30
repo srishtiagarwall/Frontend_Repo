@@ -5,12 +5,12 @@ const GrowthCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const letters = [
-    { short: "G", expanded: "Genius" },
-    { short: "R", expanded: "Rainbow" },
-    { short: "O", expanded: "Opus" },
-    { short: "W", expanded: "Wildcard" },
-    { short: "T", expanded: "Thrive" },
-    { short: "H", expanded: "Hawkeye" },
+    { short: "A", expanded: "A" },
+    { short: "B", expanded: "B" },
+    { short: "C", expanded: "C" },
+    { short: "D", expanded: "D" },
+    { short: "E", expanded: "E" },
+    { short: "F", expanded: "F" },
   ];
 
   const dummyText = [
