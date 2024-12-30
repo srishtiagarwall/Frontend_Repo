@@ -32,11 +32,11 @@ const Hero = () => {
         {/* Hero Content */}
         <div className="w-full max-w-[877px] mx-auto px-4 sm:px-6 pt-8 sm:pt-[36px] pb-2 sm:pb-12 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-            Powering the <span style={growthStyle}>&ldquo;Growth&rdquo;</span>
+            Powering the <span style={growthStyle}>&ldquo;World&rdquo;</span>
           </h1>
 
           <p className="text-gray-300 text-base sm:text-lg lg:text-[20px] mt-3 sm:mt-4">
-            Creative to Campaign to Scalable Conversions
+          Lorem ipsum dolor sit amet consectetur.
           </p>
 
           <div className="flex justify-center mt-4 sm:mt-6">
